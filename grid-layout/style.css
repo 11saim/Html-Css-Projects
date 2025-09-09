@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(230, 230, 230);
+}
+.container .left-grid {
+  width: 200px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.container div {
+  border-radius: 15px;
+}
+.container .left-grid .one {
+  background-color: hsl(31, 66%, 93%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .left-grid .one p {
+  font-size: 30px;
+  margin-left: 15px;
+  line-height: 30px;
+}
+.container .left-grid .one p span {
+  font-style: italic;
+  color: hsl(256, 67%, 59%);
+  font-weight: bolder;
+}
+.container .left-grid .one img {
+  width: 90%;
+  object-fit: cover;
+  margin: 20px auto;
+}
+.container .left-grid .two {
+  background-color: hsl(39, 100%, 71%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.container .left-grid .two p {
+  font-size: 25px;
+  max-width: 80%;
+}
+.container .left-grid .two img {
+  width: 90%;
+  object-fit: cover;
+}
+.container .right-grid {
+  width: 600px;
+  height: 700px;
+  display: grid;
+  grid-template-rows: 1.5fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+.container .right-grid .one {
+  grid-column: 1 / 3;
+  grid-row: 0 / 2;
+  background-color: hsl(256, 67%, 59%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .right-grid .one p {
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  line-height: 40px;
+  font-weight: 400;
+}
+.container .right-grid .one p .num {
+  color: hsl(39, 100%, 71%);
+  font-weight: 400;
+}
+.container .right-grid .one p .faster {
+  font-style: italic;
+}
+.container .right-grid .one img {
+  width: 35%;
+  margin: 20px 0px 5px 0px;
+  object-fit: contain;
+}
+.container .right-grid .one h5 {
+  color: white;
+  font-weight: 300;
+}
+.container .right-grid .two {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  background-color: hsl(254, 88%, 90%);
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+.container .right-grid .two p {
+  font-size: 20px;
+}
+.container .right-grid .two span {
+  font-size: 15px;
+  position: absolute;
+  bottom: 13%;
+  line-height: 18px;
+}
+.container .right-grid .two img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  height: 50%;
+  object-position: left center;
+  margin: 20px 0px;
+}
+.container .right-grid .three {
+  grid-row: 3/4;
+  grid-column: 2/4;
+  background-color: hsl(256, 67%, 59%);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .right-grid .three img {
+  width: 50%;
+  object-fit: cover;
+}
+.container .right-grid .three p {
+  font-size: 25px;
+  color: white;
+}
+.container .right-grid .four {
+  background-color: white;
+  overflow: hidden;
+  padding: 20px;
+}
+.container .right-grid .four img {
+  width: 150%;
+}
+.container .right-grid .four p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.container .right-grid .five {
+  position: relative;
+  overflow: hidden;
+  background-color: hsl(39, 100%, 71%);
+  padding: 20px;
+}
+.container .right-grid .five img {
+  position: absolute;
+  object-fit: cover;
+  width: 80%;
+  bottom: -25%;
+}
+.container .right-grid .five p {
+  font-size: 23px;
+  line-height: 23px;
+}
+.container .right-grid .six {
+  background-color: white;
+  padding: 20px;
+}
+.container .right-grid .six p {
+  font-size: 45px;
+}
+.container .right-grid .six img {
+  width: 80%;
+  object-fit: contain;
+}
+.container .right-grid .six span {
+  font-size: 10px;
+  margin: 5px 0px 20px 0px;
+  display: inline-block;
+}

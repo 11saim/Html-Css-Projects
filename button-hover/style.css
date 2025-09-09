@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container button {
+  margin: 20px 0px;
+}
+.container .One {
+  border: 1px solid green;
+  background-color: white;
+  padding: 14px 32px;
+  position: relative;
+  z-index: 1000;
+  color: green;
+  transition: all 0.3s;
+  font-size: 40px;
+}
+.container .One::after {
+  content: "";
+  background-color: green;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.3s;
+}
+.container .One:hover::after {
+  width: 100%;
+}
+.container .One:hover {
+  color: white;
+}

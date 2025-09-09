@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2a3d51;
+  position: relative;
+  flex-wrap: wrap;
+}
+.menu > ul li {
+  list-style-type: none;
+}
+.menu > ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+.menu > ul ul {
+  position: absolute;
+  background-color: #2a3d51;
+  width: 200px;
+  display: none;
+}
+.menu > ul li:hover {
+  background-color: #27ae60;
+}
+.menu > ul li:hover > ul {
+  display: block;
+}

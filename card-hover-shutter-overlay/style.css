@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 400px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 45%;
+  background-color: black;
+  left: 5%;
+  top: -50%;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 45%;
+  background-color: black;
+  bottom: -50%;
+  right: 5%;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .content {
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-180deg) scale(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.card .content .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .content .icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: black;
+  margin: 0px 5px;
+}
+.card:hover .content {
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  opacity: 1;
+}
+.card:hover::after {
+  bottom: 5%;
+}
+.card:hover::before {
+  top: 5%;
+}
