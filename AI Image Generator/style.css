@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.top {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-image: url(Images/4.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 8vh 10px;
+}
+.top::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+.top h1 {
+  z-index: 1;
+  text-align: center;
+}
+.top p {
+  text-align: center;
+  z-index: 1;
+  max-width: 600px;
+  font-size: 17px;
+  margin: 20px 0px;
+}
+.top .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  border-radius: 50px;
+  padding: 5px;
+  z-index: 1;
+}
+.top .input .right {
+  margin-left: 20px;
+  width: 60%;
+}
+.top .input .left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+}
+.top .input .right input {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.top .input .left select {
+  border: none;
+}
+.top .input .left button {
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: #4753e6;
+  color: white;
+  padding: 10px 20px;
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px;
+}
+select:focus {
+  padding: 10px;
+  outline: none;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 10px;
+}
+.bottom .image {
+  display: block;
+  position: relative;
+  width: 270px;
+  height: 270px;
+  border-radius: 10px;
+}
+.bottom .image img {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.16) 0px 0px 0px 1px;
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bottom .image button {
+  display: none;
+  font-size: 17px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  right: 5%;
+  bottom: 5%;
+  cursor: pointer;
+  color: #4753e6;
+}
+.bottom .image:hover button {
+  display: block;
+}
